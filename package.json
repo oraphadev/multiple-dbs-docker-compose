@@ -1,0 +1,29 @@
+{
+  "name": "multiple-dbs-docker-compose",
+  "version": "1.0.0",
+  "description": "Testing multiple databases with Docker Compose",
+  "main": "dist/src/index.js",
+  "engines": {
+    "node": ">=v24.13.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/src/index.js",
+    "build": "tsc --outDir dist && tsc-alias -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "Raphael Lima (@oraphadev)",
+  "license": "ISC",
+  "type": "module",
+  "packageManager": "pnpm@10.27.0",
+  "dependencies": {
+    "pg": "^8.17.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "@types/pg": "^8.16.0",
+    "tsc-alias": "^1.8.16",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
